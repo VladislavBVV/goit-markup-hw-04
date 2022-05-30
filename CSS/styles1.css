@@ -1,0 +1,541 @@
+:root {
+    --paragraphtextcolor: #757575;
+    --titletextcolor: #212121;
+    --accent: #2196F3;
+    --cardsbcg: #FFFFFF;
+    --teambcg: #F5F4FA;
+    --headerbgc: #FFFFFF;
+    --herobcg: #2F303A;
+    --solutionsbcg: #FFFFFF;
+    --worksbcg: #FFFFFF;
+    --footerbcg: #2F303A;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width:100%; 
+  height:auto;
+}
+
+
+
+body {
+   font-family: "Roboto", sans-serif;
+    color: #757575;
+    background-color: #FFF;
+
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style:none;
+}
+
+h2 {
+    margin-top: 0px;
+}  
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 9.4px;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* ------------------Header------------------ */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--headerbgc);
+    
+}
+
+.header .container {
+    display: flex;
+   
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link, .link-current {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.logo {
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color: var(--accent);
+}
+.logo1 {
+    font-family: 'Raleway';
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color: #000000;
+}
+
+
+
+.site-nav .item {
+    padding: 0px;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.logo-header {
+   text-decoration: none;
+   margin-right: 50px;
+}
+
+.link {
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #212121;
+ 
+cursor: pointer;
+}
+
+.link:hover,
+.link:focus {
+text-decoration: none;
+   color: var(--accent)
+}
+
+.link-current {
+    color: var(--accent);
+    text-decoration: none;    
+}
+
+.contacts .item {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
+.contacts .link {
+    color: #757575;
+}
+.contacts, .link:hover,
+.contacts, .link:focus {
+    color: var(--accent)  
+}
+
+/* -------------------------Hero----------------------- */
+
+.hero {    
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background: var(--herobcg);
+}
+
+.hero-title {
+    max-width: 696px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.36;
+    font-weight: 900;
+font-size: 44px;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+
+    color: #FFFFFF;
+}
+
+.hero .button {
+    
+    min-width: 200px;
+    padding: 10px 32px;  
+    border: 0px solid transparent;
+    text-align: center;
+}
+
+.button {
+    font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+letter-spacing: 0.06em;
+font-family: inherit;
+
+    color: #FFFFFF;
+    background-color: var(--accent);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* ----------------------------Наши преимущества section solutions-------------------- */
+
+.section-solutions {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--solutionsbcg);
+}
+
+.solutionspar {
+    display: flex;
+
+}
+
+.solutionspar .item {
+    width: 270px;
+    
+}
+
+.solutionspar .item + .item{
+    margin-left: 30px;
+}
+.solutions-title {
+color: var(--titletextcolor);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.solutions-text {
+    font-size: 14px;
+line-height: 1.71;
+    color: var(--paragraphtextcolor);
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color: var(--titletextcolor);
+    text-align: center;
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--titletextcolor) 
+}
+
+.whatwedo {
+    display: flex;
+    
+}
+
+
+.section-whatwedo {
+    padding-bottom: 94px;
+}
+
+
+.whatwedo .item {
+    display: block;
+    
+
+}
+
+.whatwedo .item + .item{
+    margin-left: 30px;
+}
+
+/* -------------------------------наша команда--------------------------- */
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+   background-color: var(--teambcg);
+}
+
+
+.team-list .cards + .cards{
+    margin-left: 30px;
+}
+
+
+.team-list .cards {
+    display: block;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+
+.team-list {
+    display: flex;
+
+}
+
+.team-underline {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+.team .upperphotounderline {
+    text-align: center;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+    
+color: var(--titletextcolor)
+}
+
+.team .bottomphotounderline {
+    text-align: center;
+    font-size: 16px;
+line-height: 1.19;
+
+    color: var(--paragraphtextcolor);
+}
+
+/* --------------------------------Portfolio----------------------------- */
+
+
+
+.nav-portfolio .button {
+    background-color: #F5F4FA;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.nav-portfolio button:hover,
+.nav-portfolio button:focus {
+    color: #FFFFFF;
+  background-color: var(--accent);
+}
+
+.nav-portfolio .button {
+    padding: 6px 22px;
+    border: 1px solid transparent;
+
+}
+
+.main-portfolio {
+    background-color: var(--worksbcg);
+
+}
+
+.nav-portfolio {
+    justify-content: center;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: #FFFFFF;
+    
+    
+}
+
+.nav-portfolio .item + .item {
+margin-left: 8px;
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.works-list .container h3 p {
+
+    padding: 20px 24px;
+}
+
+
+
+.works-list .cards {
+    margin: 0px auto;
+    display: block;
+ width: 100%;
+    height: auto;
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+.works-list .cards:nth-child(3n) {
+margin-right: 0;
+}
+
+.works-list .cards:nth-last-child(-n + 3) {
+margin-bottom: 0;
+}
+
+.works-underline {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    
+
+}
+
+.works-list .upperphotounderline {
+    font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
+letter-spacing: 0.06em;
+
+color: var(--titletextcolor)
+}
+
+.works-list .bottomphotounderline {
+    font-size: 16px;
+line-height: 1.88;
+    color: var(--paragraphtextcolor);
+}
+
+/* --------------------------------Footer---------------------------- */
+
+.footer {
+    padding: 60px;
+    background-color: var(--footerbcg);
+}
+
+/* footer logo */
+
+
+.footer a {
+    text-decoration: none;
+}
+
+.footercontacts .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.mainlogo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color: var(--accent);
+
+}
+.logo2 {
+    font-family: 'Raleway';
+font-style: normal; 
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+}
+
+.streetadres {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1,71;
+letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: #FFFFFF;
+  
+}
+
+.streetadres:hover,
+.streetadress:focus 
+{
+   color: var(--accent)
+}
+
+.mail, .phone {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1,71;
+letter-spacing: 0.03em;
+
+color: #FFFFFF99;
+text-decoration: none;
+}
+
+.mail {
+    display: inline-block;
+    
+}
+
+.mail:hover {
+   color: var(--accent)
+}
+
+.phone:hover {
+   color: var(--accent)
+}
+
+
+
+
+
+
