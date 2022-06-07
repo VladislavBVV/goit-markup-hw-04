@@ -151,11 +151,6 @@ color: #212121;
 cursor: pointer;
 }
 
-.link:hover,
-.link:focus {
-text-decoration: none;
-   color: var(--accent)
-}
 
 .link-current {
     color: var(--accent);
@@ -170,8 +165,7 @@ text-decoration: none;
 .contacts .item {
     display: inline-flex;
     align-items: center;
-/* padding-top: 30px;
-padding-bottom: 30px; */
+  
 
 }
 
@@ -183,13 +177,13 @@ padding-bottom: 30px; */
     
 }
 
-
-
 .phone {
     display: block;
     margin-right: 10px;
     fill: #757575;
 }
+
+
 
 .phone-link {
     margin-right: 10px;
@@ -203,22 +197,39 @@ padding-bottom: 30px; */
 .contacts .link {
     color: #757575;
 }
-.contacts, .link:hover,
-.contacts, .link:focus {
+
+
+
+
+.icon-phone:hover, 
+.icon-phone:focus{
+    fill: var(--accent) 
+} */
+
+
+
+.contacts, .link, :hover,
+.contacts, .link:focus{
     color: var(--accent)  
 }
 
+.link :hover, .icon-mail, 
+.link :focus, .icon-mail {
+    fill: var(--accent) 
+}
 
+.icon-mail .link .mail-link:hover,
+.icon-mail .link .mail-link:focus {
+text-decoration: none;
+   color: var(--accent)
+}
 
 .icon-mail:hover .link, 
 .icon-mail:focus .link{
     fill: var(--accent) 
 }
 
-.icon-phone:hover .link,
-.icon-phone:focus .link{
-    fill: var(--accent)  
-}
+
 
 
 
@@ -465,47 +476,19 @@ margin-bottom: 16px;
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 5px 5px 5px 5px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
     
-   
-
-}
-
-.icons {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
-
-/* .icons {
     
-    fill: #AFB1B8;
-} */
+}
 
-
-
-.social-link:hover, 
+.social-link:hover,
 .social-link:focus {
     background-color: var(--accent);
+    fill: #ffffff;
 }
-
-.social-link:hover .icons, 
-.social-link:focus .icons{
-    fill: #FFFFFF;
-}
-
-
-
 
 
 
@@ -533,7 +516,9 @@ display: flex;
 
 
 .clients-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border:1px solid #AFB1B8; 
     border-radius:4px;
 }
@@ -541,7 +526,6 @@ display: flex;
 .clients-icons {
     width: 100%;
     height: 100%;
-    display: flex;
     padding: 16px 32px;
     fill: #AFB1B8
     
@@ -550,22 +534,16 @@ display: flex;
 
 .clients-link:hover .clients-icons, 
 .clients-link:focus .clients-icons{ 
+    border-color: 1px solid #2196F3;
     fill: var(--accent);
+    
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    border: 1px solid #2196F3;
-border-radius: 4px;
-   
-
+    border-color: var(--accent);
+ 
 }
-
-
-
-
-
-
 
 
 /* --------------------------------Portfolio----------------------------- */
@@ -601,7 +579,8 @@ border-radius: 4px;
 
 .main-portfolio {
     background-color: var(--worksbcg);
-padding: 94px;
+padding-top:94px;
+padding-bottom:94px
 }
 
 
@@ -775,13 +754,19 @@ text-decoration: none;
 
 /* -----------------------------------Footer social----------------------------- */
 
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .footer > .container {
     display: flex;
     align-items: center;
 }
 
 .adress{
-    
     text-align: left;
     margin-right: 70px;
     
@@ -806,18 +791,34 @@ color: #FFFFFF;
 
 .footer-social {
     display: flex;
-    padding-left: 0px;
-   
+    justify-content: center;
 
 }
 
-.social {
-display: flex;
-    margin-right: 0px;
+.social-footer {
     margin-left: 10px;
     width: 44px;
     height: 44px;
     
+}
+
+
+.footer-link {
+display: flex;
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+    
+
+}
+
+.footer-icons {
+    fill: #ffffff;
 }
 
 .social:first-child {
@@ -829,38 +830,10 @@ display: flex;
 }
 
 
-.footer-icons {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-    padding: 12px 12px 12px 12px;
-    fill: #FFFFFF;
-    
-}
-
-.footer-link {
-display: flex;
-    width: 100%;
-    height: 100%;
-    
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    fill: #FFFFFF;
-    
-
-}
-
-
-
 .footer-link:hover, 
 .footer-link:focus {
+    fill: #FFFFFF;
     background-color: var(--accent);
 }
 
-.footer-link:hover .icons, 
-.footer-link:focus .icons{
-    fill: #FFFFFF;
-}
 
