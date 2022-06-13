@@ -162,11 +162,12 @@ cursor: pointer;
     color: currentColor;
 }
 
-.contacts .item {
-    display: inline-flex;
-    align-items: center;
-  
 
+
+.contacts .link {
+    display: flex;
+    align-items: center;
+    color: #757575;
 }
 
 .mailto {
@@ -194,9 +195,6 @@ cursor: pointer;
     margin-left: 50px;
 }
 
-.contacts .link {
-    color: #757575;
-}
 
 .nav .link:hover,
 .nav .link:focus {
@@ -204,33 +202,30 @@ cursor: pointer;
 }
 
 
-/* .icon-phone:hover, 
+.icon-mail .link:hover,
+.icon-mail .link:focus {
+color: var(--accent);
+}
+
+.icon-phone .link:hover,
+.icon-phone .link:focus {
+    color: var(--accent);
+}
+
+.icon-phone:hover, 
 .icon-phone:focus{
     fill: var(--accent) 
 } 
 
-
-
-.contacts, .link, :hover,
-.contacts, .link:focus{
-    color: var(--accent)  
-}
-
-.link :hover, .icon-mail, 
-.link :focus, .icon-mail {
+.icon-mail:hover, 
+.icon-mail:focus{
     fill: var(--accent) 
 }
 
-.icon-mail .link .mail-link:hover,
-.icon-mail .link .mail-link:focus {
-text-decoration: none;
-   color: var(--accent)
-}
 
-.icon-mail:hover .link, 
-.icon-mail:focus .link{
-    fill: var(--accent) 
-} */
+
+
+
 
 
 
@@ -323,7 +318,7 @@ font-family: inherit;
     content: "";
     height: 40px;
     margin-right: 10px;
-    margin: 0;
+    margin-bottom: 30px;
     background-color: #F5F4FA;
 }
 
@@ -520,6 +515,8 @@ display: flex;
 
 .clients-link {
     display: flex;
+    width: 170px;
+    height: 92px;
     align-items: center;
     justify-content: center;
     border:1px solid #AFB1B8; 
@@ -527,9 +524,9 @@ display: flex;
 }
 
 .clients-icons {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    padding: 16px 32px;
+    padding: 16px 32px; */
     fill: #AFB1B8
     
 }
@@ -537,7 +534,6 @@ display: flex;
 
 .clients-link:hover .clients-icons, 
 .clients-link:focus .clients-icons{ 
-    border-color: 1px solid #2196F3;
     fill: var(--accent);
     
 }
@@ -622,8 +618,8 @@ margin-left: 8px;
 
 }
 
-.works-list .cards:hover,
-.works-list .cards:focus {
+.works-list .link:hover,
+.works-list .link:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
@@ -822,7 +818,7 @@ display: flex;
     fill: #ffffff;
 }
 
-.social:first-child {
+.social-footer:first-child {
     margin-left: 0px;
 }
 
